@@ -2,7 +2,7 @@ function ChooseRandomImage ()
 {
     const numberOfImages = 5;
     let index = GenerateRandomNumber(1)
-    console.log(index)
+    // console.log(index)
 
     switch (index)
     {
