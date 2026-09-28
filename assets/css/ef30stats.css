@@ -1,0 +1,95 @@
+/* div 
+{
+    border: 1px dotted red;
+} */
+
+var
+{
+    font-style: normal;
+}
+h3
+{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+
+.masterContainer
+{
+    width: 1250px;;
+    max-width: 90%;
+    padding: 20px;
+}
+.contentContainer
+{
+    padding: 0px;
+}
+
+
+.gridCols3, .gridCols2
+{
+    display: grid;
+    /* width: 100%; */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    column-gap: 15px;
+    /* row-gap: 10px; */
+    justify-content: center;
+    align-items: center;
+}
+.gridCols3
+{
+    grid-template-columns: repeat(3,1fr);
+}
+.gridCols2
+{
+    grid-template-columns: repeat(2,1fr);
+}
+
+#totalRegsValue
+{
+    font-size: 3.5rem;
+}
+#totalAttendees
+{
+    font-size: 4rem;
+}
+#ageGraphTitleDiv
+{
+    grid-template-columns: 1fr auto;
+}
+
+#ageDistributionGraphContainer
+{
+    height: 320px;
+}
+.graphContainer
+{
+    height: 200px;
+}
+
+#shortSizeGraphContainer
+{
+    width: 40%;
+    min-width: fit-content;
+    /* margin: auto; */
+}
+
+.statisticContainerDiv
+{
+    background: white;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+    /* width: 100%; */
+}
+#shirtSizeAndInterestsContainter
+{
+    grid-template-columns: 0.7fr 0.3fr;
+}
+#shirtSizeDiv
+{
+    height: 100%;
+    max-height: 300px;
+}
