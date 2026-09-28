@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fredrek</title>
+    <link rel="shortcut icon" href="/assets/img/icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/ef30stats.css">
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/graphs.js"></script>
+</head>
+<body>
+    
+    <div class="masterContainer" id="">
+        <div class="contentContainer" id="">
+            <h1>Eurofurence 30 attendance statistics</h1>
+
+            <hr>
+
+            <div class="gridCols3" id="">
+                <div class="statisticContainerDiv" id="totalRegsDiv">
+                    <h3 class="statisticTitle" id=""> Total registrations: </h3>
+                    <var class="" id="totalRegsValue"> 9 532 </var>
+                    
+                    <h3 class="statisticTitle" id=""> Attendees: </h3>
+                    <var class="" id="totalAttendees"> 9 139 </var>
+                </div>
+                <div class="statisticContainerDiv" id="regStatusDiv">
+                    <h3 class="statisticTitle" id=""> Registration state: </h3>
+
+                    <div class="graphContainer" id="regStatusGraphContainer">
+                        <div id="regstatus-graph"></div>
+                    </div>
+                </div>
+                <div class="statisticContainerDiv" id="regTypeDiv">
+                    <h3 class="statisticTitle" id=""> Ticket types: </h3>
+
+                    <div class="graphContainer" id="ticketTypeGraphContainer">
+                        <div id="ticketType-graph"></div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="statisticContainerDiv" id="ageDistributionDiv">
+                <div id="ageGraphTitleDiv" class="gridCols3">
+                    <h3 class="statisticTitle" id="">Age distribution</h3>                    
+                    <span class="" id="averageAgeValue">Average: 29 | Median: 27</span>
+                </div>
+
+                <div class="graphContainer" id="ageDistributionGraphContainer">
+                    <div id="ageDistribution-graph"></div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="gridCols2" id="shirtSizeAndInterestsContainter">
+                
+            </div>
+
+        </div> <!-- contentContainer -->
+    </div> <!-- masterContainer -->
+
+    <script>
+        SetGlobalChartsProperties();
+        DrawAllGraphs();
+    </script>
+</body>
+</html>
